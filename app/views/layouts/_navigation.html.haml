@@ -1,0 +1,24 @@
+#main-nav.navbar.navbar-fixed-top
+  .container
+    .navbar-header
+      %button.navbar-toggle{"data-target" => "#site-nav", "data-toggle" => "collapse", :type => "button"}
+        %span.icon-bar
+        %span.icon-bar
+        %span.icon-bar
+      / ======= LOGO ========
+      %a.navbar-brand.scrollto{:href => "#home"}
+        SHAPES
+        %span / Creative Studio
+      / <a class="navbar-brand scrollto ir-logo" href="#home">SHAPES<span> / Creative Studio</span></a>
+    #site-nav.navbar-collapse.collapse
+      %ul.nav.navbar-nav.navbar-right
+        %li.sr-only
+          %a.scrollto{:href => "#home"} Home
+        %li
+          %a.scrollto{:href => "#services"} Services
+        %li
+          %a.scrollto{:href => "#portfolio"} Portfolio
+        %li
+          %a.scrollto{:href => "#about"} About
+        %li
+          %a.scrollto{:href => "#contact"} Contact

@@ -1,0 +1,22 @@
+#contact_form.col-sm-6.scrollimation.fade-right
+  = form_for @contact do |f|
+    %h3.primary Drop us a line
+    .form-group
+      .controls
+        = f.text_field :name, placeholder: 'Your name', class: 'form-control input-lg', required: true
+        %i.fa.fa-user
+
+    .form-group
+      .controls
+        = f.text_field :email, placeholder: 'Your email', class: 'form-control input-lg', required: true
+        %i.fa.fa-envelope
+
+    .form-group
+      .controls
+        = f.text_area :message, placeholder: 'Please enter your message', class: 'form-control input-lg', required: true
+        %i.fa.fa-comment
+
+    %p
+      = button_tag class: "btn btn-theme btn-block" do
+        %i.fa.fa-location-arrow
+          Send Message

@@ -1,13 +1,3 @@
-#page-loader
-  %h1.loader-logo
-    Shapes
-    %span / Creative Studio
-  %span.page-loader-gif
-/ === BACKGROUND ===
-#backgrounds{"data-backgrounds" => "assets/back_img_1.jpg,assets/back_img_2.jpg,assets/back_img_3.jpg"}
-#color-overlay
-
-
 %header#home.jumbotron
   .container
     %img.img-responsive.img-center.header-logo{:alt => "", :src => "assets/drop.png"}
@@ -20,8 +10,14 @@
               %p are not things
             %li
               %p are Shapes
-
-
+        / End home-slider
+      / End message-box
+  / End container
+/ End header
+/
+  \==============================================
+  SERVICES
+  \===============================================
 %section#services.padding-bottom.bg-light
   .container
     .section-header.scrollimation.fade-up
@@ -32,7 +28,7 @@
         We create awesome Websites and Mobile Apps, the perfect solution for your project.
         %br>/
         We don't make designs, we make magic!
-
+    / End section-header
     .row
       .col-sm-4.item.text-center.scrollimation.scale-in
         .icon
@@ -466,6 +462,10 @@
         %a.btn.btn-theme.btn-lg.scrollto{:href => "#contact"} Contact Us
   / End Projects Band
 / End portfolio section
+/
+  \==============================================
+  TESTIMONIALS
+  \===============================================
 %section#testimonials.bg-transparent
   .container.scrollimation.fade-left
     .quote-icon
@@ -587,30 +587,16 @@
               %li
                 %a{:href => "#link"}
                   %i.fa.fa-google-plus
-    / End row
-  / End container
-/ End about section
-/
-  \==============================================
-  TWITTER FEED
-  \===============================================
+
 %section#twitter.bg-transparent
   .container.scrollimation.fade-right
     .twitter-icon
-      / Twitter Icon
       %i.fa.fa-twitter
     .row
       .col-sm-8.col-sm-offset-2
         #twitter-slider.flexslider{"data-tweets-length" => "3", "data-widget-id" => "386017398488186880"}
-        / End slider
-      / End col
-    / End row
-  / End container
-/ End Twitter section
-/
-  \==============================================
-  CONTACT
-  \===============================================
+
+
 %section#contact.padding-bottom.bg-light
   .container
     .section-header.scrollimation.fade-up
@@ -621,35 +607,11 @@
         Are you ready to start your project? We are here for you.
         %br/
         Visit us, write to us or call us
-    / End section-header
+
+
     .row
-      / === Contact Form ===
-      %form#contact-form.col-sm-6.scrollimation.fade-right{:action => "contact.php", :method => "post", :novalidate => ""}
-        %h3.primary Drop us a line
-        .form-group
-          %label.control-label{:for => "contact-name"} Name
-          .controls
-            %input#contact-name.form-control.input-lg.requiredField{"data-error-empty" => "Please enter your name", :name => "contactName", :placeholder => "Your name", :type => "text"}
-              %i.fa.fa-user
-        / End name input
-        .form-group
-          %label.control-label{:for => "contact-mail"} Email
-          .controls
-            %input#contact-mail.form-control.input-lg.requiredField{"data-error-empty" => "Please enter your email", "data-error-invalid" => "Invalid email address", :name => "email", :placeholder => "Your email", :type => "email"}
-              %i.fa.fa-envelope
-        / End email input
-        .form-group
-          %label.control-label{:for => "contact-message"} Message
-          .controls
-            %textarea#contact-message.form-control.input-lg.requiredField{"data-error-empty" => "Please enter your message", :name => "comments", :placeholder => "Your message", :rows => "6"}
-            %i.fa.fa-comment
-        / End textarea
-        %p
-          %button.btn.btn-theme.btn-block{"data-error-message" => "Error!", "data-ok-message" => "Message Sent", "data-sending-message" => "Sending...", :name => "submit", :type => "submit"}
-            %i.fa.fa-location-arrow>
-            Send Message
-        %input#submitted{:name => "submitted", :type => "hidden", :value => "true"}/
-      / End contact-form
+      = render 'contacts/new'
+
       .col-sm-5.col-sm-offset-1.contact-info
         .scrollimation.scale-in
           %h3.primary Find Us

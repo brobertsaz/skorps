@@ -1,0 +1,47 @@
+%section#contact.padding-bottom.bg-light
+  .container
+    .section-header.scrollimation.fade-up
+      .section-icon
+        %i.fa.fa-envelope
+      %h1.section-title Contact
+      %p.section-description.lead
+        Are you ready to start your project? We are here for you.
+        %br/
+        Visit us, write to us or call us
+
+
+    .row
+      #contact_form.col-sm-6.scrollimation.fade-right
+        = render 'contacts/new'
+
+      .col-sm-5.col-sm-offset-1.contact-info
+        .scrollimation.scale-in
+          %h3.primary Find Us
+          %ul.address
+            %li
+              %span>
+                %i.fa.fa-map-marker.fa-fw
+              Scottsdale, AZ
+
+            %li
+              %span>
+                %i.fa.fa-phone.fa-fw
+              (480) 420 - 8365
+            %li
+              %span
+                %i.fa.fa-envelope.fa-fw
+              %a{:href => "mailto:bob@skorpionsoftware.com"} bob@skorpionsoftware.com
+        .scrollimation.scale-in
+          %h3.primary Business Hours
+          %ul.hours
+            %li
+              %span> Mon - Fri :
+              9am - 5pm
+            %li
+              %span> Saturday :
+              9am - 2pm
+
+        .map.scrollimation.scale-in
+          %img.img-responsive{:alt => "", :src => "assets/map.png"}/
+          %a.spot{"data-toggle" => "tooltip", :href => "https://www.google.com/maps/place/Scottsdale,+AZ/@33.6738949,-112.1386422,10z/data=!3m1!4b1!4m5!3m4!1s0x872b08d9a7772c97:0x26d2e412188fe618!8m2!3d33.4941704!4d-111.9260519", :style => "top:42%; left:16.5%;", :target => "_blank", :title => "Find Us on Google Maps"}
+            %span

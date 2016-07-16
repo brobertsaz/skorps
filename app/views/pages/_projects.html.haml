@@ -1,0 +1,217 @@
+%section#portfolio
+  .bg-light
+    .container
+      .section-header.scrollimation.fade-up
+        .section-icon
+          %i.fa.fa-suitcase
+        %h1.section-title Portfolio
+        %p.section-description.lead
+          We are proud of what we have done. We are ready for the next big challenge. Yours!
+          %br/
+          Take a look at our most recent projects.
+
+      #filter-works.scrollimation.fade-in
+        %ul{"data-filter" => "type"}
+          %li.active
+            %a{"data-type" => "*", :href => "#"} All Types
+          %li
+            %a{"data-type" => ".mobile", :href => "#"} Mobile
+          %li
+            %a{"data-type" => ".web", :href => "#"} Web
+
+      %p.filter-results.text-center
+        %span
+        Works match criteria
+
+
+  #preview-scroll
+  #preview-loader
+  #project-preview-wrapper
+    #project-preview
+      .container
+        .preview-header
+          %h1.preview-title
+          %span.close-preview
+            %i.fa.fa-times
+        .row
+          #preview-media.col-md-8
+          #preview-details.col-md-4
+            %h2 Project Details
+            %ul
+        #preview-content.row
+
+  .padding-bottom.bg-light
+    .container.masonry-wrapper
+      #projects-container
+        %article.project-item.web
+          %a{:href => "#"}
+            %img.img-responsive.project-thumb{:alt => "", :src => "assets/projects/project-thumb-placeholder.png"}
+              / Project thumb
+              .details
+                %h3.project-title Shpick
+                / Project Title
+                %small Web design, Image
+                / Project Categories
+          / ==== Project Preview ====
+          .sr-only
+            .project-media{"data-images" => "assets/projects/project-slide-placeholder.png"}
+            .project-attributes
+              .newline
+                %span> Date :
+                November 2013
+              .newline
+                %span> Client :
+                Company SA
+              .newline
+                %span> Categories :
+                Web Design
+              .newline
+                %span Website :
+                %a{:href => "#link"} www.example.com
+            .project-description
+              .col-md-4
+                %h2 The Challenge
+                %p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sapien risus, blandit at fringilla ac, varius sed dolor. Donec augue lacus, vulputate sed consectetur facilisis, interdum pharetra ligula. Nulla suscipit erat nibh, ut porttitor nisl dapibus eu.
+              .col-md-4
+                %h2 The Solution
+                %p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sapien risus, blandit at fringilla ac, varius sed dolor. Donec augue lacus, vulputate sed consectetur facilisis, interdum pharetra ligula. Nulla suscipit erat nibh, ut porttitor nisl dapibus eu.
+              .col-md-4
+                %h2 The Result
+                %p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sapien risus, blandit at fringilla ac, varius sed dolor. Donec augue lacus, vulputate sed consectetur facilisis, interdum pharetra ligula. Nulla suscipit erat nibh, ut porttitor nisl dapibus eu.
+          / End Project Preview
+
+        %article.project-item.web
+          %a{:href => "#"}
+            %img.img-responsive.project-thumb{:alt => "", :src => "assets/projects/project-thumb-placeholder.png"}
+              / Project thumb
+              .details
+                %h3.project-title Badoo
+                / Project Title
+                %small Web design, Gallery
+                / Project Categories
+          / ==== Project Preview ====
+          .sr-only
+            .project-media{"data-images" => "assets/projects/project-slide-placeholder.png,assets/projects/project-slide-placeholder.png"}
+            .project-attributes
+              .newline
+                %span> Date :
+                July 2013
+              .newline
+                %span> Client :
+                Microsoft Inc.
+              .newline
+                %span> Categories :
+                Web Design, Apps
+              .newline
+                %span Website :
+                %a{:href => "#link"} www.example.com
+            .project-description
+              .col-md-6
+                %h2 The Challenge
+                %p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sapien risus, blandit at fringilla ac, varius sed dolor. Donec augue lacus, vulputate sed consectetur facilisis, interdum pharetra ligula. Nulla suscipit erat nibh, ut porttitor nisl dapibus eu.
+              .col-md-6
+                %h2 The Solution
+                %p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sapien risus, blandit at fringilla ac, varius sed dolor. Donec augue lacus, vulputate sed consectetur facilisis, interdum pharetra ligula. Nulla suscipit erat nibh, ut porttitor nisl dapibus eu.
+          / End Project Preview
+        %article.project-item.mobile
+          %a{:href => "#"}
+            %img.img-responsive.project-thumb{:alt => "", :src => "assets/projects/project-thumb-placeholder.png"}
+              / Project thumb
+              .details
+                %h3.project-title Moscow Tsum
+                / Project Title
+                %small UI-Kits, Gallery
+                / Project Categories
+          / ==== Project Preview ====
+          .sr-only
+            .project-media{"data-images" => "assets/projects/project-slide-placeholder.png,assets/projects/project-slide-placeholder.png"}
+            .project-attributes
+              .newline
+                %span> Date :
+                May 2013
+              .newline
+                %span> Client :
+                Google Inc.
+              .newline
+                %span> Categories :
+                Apps, UI Kits
+              .newline
+                %span Website :
+                %a{:href => "#link"} www.example.com
+            .project-description
+              .col-md-12
+                %h2 The Challenge
+                %p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sapien risus, blandit at fringilla ac, varius sed dolor. Donec augue lacus, vulputate sed consectetur facilisis, interdum pharetra ligula. Nulla suscipit erat nibh, ut porttitor nisl dapibus eu.
+                %p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sapien risus, blandit at fringilla ac, varius sed dolor. Donec augue lacus, vulputate sed consectetur facilisis, interdum pharetra ligula. Nulla suscipit erat nibh, ut porttitor nisl dapibus eu.
+          / End Project Preview
+        %article.project-item.web
+          %a{:href => "#"}
+            %img.img-responsive.project-thumb{:alt => "", :src => "assets/projects/project-thumb-placeholder.png"}
+              / Project thumb
+              .details
+                %h3.project-title Own the Night
+                / Project Title
+                %small Web design, Gallery
+                / Project Categories
+          / ==== Project Preview ====
+          .sr-only
+            .project-media{"data-images" => "assets/projects/project-slide-placeholder.png,assets/projects/project-slide-placeholder.png"}
+            .project-attributes
+              .newline
+                %span> Date :
+                November 2012
+              .newline
+                %span> Client :
+                Company SA
+              .newline
+                %span> Categories :
+                Web Design, UI Kits
+              .newline
+                %span Website :
+                %a{:href => "#link"} www.example.com
+            .project-description
+              .col-md-4
+                %h2 The Challenge
+                %p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sapien risus, blandit at fringilla ac, varius sed dolor. Donec augue lacus, vulputate sed consectetur facilisis, interdum pharetra ligula. Nulla suscipit erat nibh, ut porttitor nisl dapibus eu.
+              .col-md-4
+                %h2 The Solution
+                %p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sapien risus, blandit at fringilla ac, varius sed dolor. Donec augue lacus, vulputate sed consectetur facilisis, interdum pharetra ligula. Nulla suscipit erat nibh, ut porttitor nisl dapibus eu.
+              .col-md-4
+                %h2 The Result
+                %p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sapien risus, blandit at fringilla ac, varius sed dolor. Donec augue lacus, vulputate sed consectetur facilisis, interdum pharetra ligula. Nulla suscipit erat nibh, ut porttitor nisl dapibus eu.
+          / End Project Preview
+        %article.project-item.mobile
+          %a{:href => "#"}
+            %img.img-responsive.project-thumb{:alt => "", :src => "assets/projects/project-thumb-placeholder.png"}
+              .details
+                %h3.project-title Owzzup
+                %small Apps, Image
+
+          .sr-only
+            .project-media{"data-images" => "assets/projects/project-slide-placeholder.png"}
+            .project-attributes
+              .newline
+                %span> Date :
+                April 2011
+              .newline
+                %span> Client :
+                Google Inc.
+              .newline
+                %span> Categories :
+                Apps
+              .newline
+                %span Website :
+                %a{:href => "#link"} www.example.com
+            .project-description
+              .col-md-12
+                %h2 The Challenge
+                %p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sapien risus, blandit at fringilla ac, varius sed dolor. Donec augue lacus, vulputate sed consectetur facilisis, interdum pharetra ligula. Nulla suscipit erat nibh, ut porttitor nisl dapibus eu.
+                %p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sapien risus, blandit at fringilla ac, varius sed dolor. Donec augue lacus, vulputate sed consectetur facilisis, interdum pharetra ligula. Nulla suscipit erat nibh, ut porttitor nisl dapibus eu.
+
+    .container
+      %br/
+      %p.lead.text-center.scrollimation.fade-in
+        We are ready for the next challenge.
+        %span.primary Yours!
+      %p.text-center.scrollimation.scale-in
+        %a.btn.btn-theme.btn-lg.scrollto{:href => "#contact"} Contact Us

@@ -23,7 +23,6 @@
 //= require respond.min
 //= require respond.src
 //= require shapes
-
 //= require waypoints.min
 //= require libs/bootstrap.min
 //= require libs/jquery-1.9.1.min

@@ -366,25 +366,26 @@ a.btn-theme:focus{
 #main-nav .nav a:before {
     display:block;
     position:absolute;
-    bottom:7px;
-    left:50%;
-    margin-left:-15px;
+    bottom:10px;
+/*    left:50%;*/
+/*    margin-left:-15px;*/
+    margin: auto 0;
     content:"";
     width:0;
-    height:1px;
+    height:2px;
     background:#D50000;
-    -webkit-transform:rotate(-45deg);
+/*    -webkit-transform:rotate(-45deg);
     -webkit-transform-origin:0% 100%;
     transform:rotate(-45deg);
-    transform-origin:0% 100%;
-    z-index:-1;
+    transform-origin:0% 100%;*/
+/*    z-index:-1;*/
     opacity:0;
     -webkit-transition:all 0.3s ease-out;
     transition:all 0.3s ease-out;
 }
 
 #main-nav .nav a:hover:before {
-    width:50px;
+    width:56px;
     opacity:1;
 }
 
@@ -1217,6 +1218,129 @@ a.btn-theme:focus{
     background:#fff;
     color:#D50000;
 }
+
+
+/*----------------------
+-----Brands Styles-----
+------------------------*/
+
+#brands {
+    padding-bottom:80px;
+}
+
+#brands .quote-icon {
+    padding-top:6px;
+    text-align:center;
+}
+
+#brands .fa-quote-left {
+    font-size:48px;
+    margin-bottom:20px;
+}
+
+#brands a:hover,
+#brands a:active,
+#brands a:focus{
+    text-decoration:none;
+}
+
+#brands .testimonial{
+    font-size:22px;
+    line-height:32px;
+    font-weight:300;
+    text-align:center;
+    word-spacing:5px;
+    margin-bottom:40px;
+}
+
+#brands .tweet a:hover{
+    text-decoration:underline;
+}
+#brands .client-img{
+    width:auto;
+    margin:0 auto;
+}
+
+#brands .client{
+    font-size:16px;
+    font-weight:300;
+    margin-bottom:15px;
+    text-align:center;
+}
+
+#brands .client span{
+    font-style:italic;
+}
+
+#brands-slider{
+    border:none;
+    box-shadow:none;
+    background:transparent;
+    margin:0;
+    padding:0;
+}
+
+#brands-slider .flex-direction-nav {
+    display:block;
+    position:absolute;
+    width:100%;
+    top:20px;
+    right:0;
+}
+
+#brands-slider .flex-direction-nav li{
+    display:inline;
+}
+
+#brands .flex-direction-nav .flex-prev,
+#brands .flex-direction-nav .flex-next{
+    background:transparent;
+    background-image:none;
+    display:inline;
+    opacity:1;
+    text-indent:0;
+    position:absolute;
+    top:0;
+    width:44px;
+    height:44px;
+    padding:0;
+    padding-left:12px;
+    margin:0;
+    margin-left:7px;
+    font-size:42px;
+    line-height:38px;
+    color:#fff;
+    border-radius:50%;
+    -webkit-transition:all .2s ease-out;
+    transition:all .2s ease-out;
+}
+
+#brands .flex-direction-nav .flex-prev{
+    left:-100px;
+}
+
+#brands .flex-direction-nav .flex-next{
+    right:-100px;
+    text-align:right;
+    padding-right:12px;
+}
+
+#brands-slider .flex-direction-nav a:hover,
+#brands-slider .flex-direction-nav a:active,
+#brands-slider .flex-direction-nav a:focus{
+    text-decoration:none;
+}
+
+#brands-slider .flex-direction-nav a:hover {
+    background:#fff;
+    color:#D50000;
+}
+
+#brands .flexslider .slides img {
+    width: 50%;
+    margin: 0 auto;
+}
+
 
 /*----------------------
 -----Twitter Styles-----

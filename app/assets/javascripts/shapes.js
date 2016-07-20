@@ -393,6 +393,18 @@ $(document).ready(function() {
 			smoothHeight: false
 		});
 
+		$('#brands-slider').flexslider({
+			prevText: '<i class="fa fa-angle-left"></i>',
+			nextText: '<i class="fa fa-angle-right"></i>',
+			animation: 'slide',
+			slideshowSpeed: 5000,
+			useCSS: true,
+			directionNav: false,
+			pauseOnAction: false,
+			pauseOnHover: true,
+			smoothHeight: false
+		});
+
 	/*============================================
 	Resize Functions
 	==============================================*/

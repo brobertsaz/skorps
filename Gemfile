@@ -29,13 +29,10 @@ gem 'jbuilder', '~> 2.5'
 
 gem 'devise'
 
-gem 'activeadmin', github: 'activeadmin'
-gem 'inherited_resources', github: 'activeadmin/inherited_resources'
 gem 'cancancan'
 gem 'haml'
 gem "html2haml"
 gem 'bootstrap-sass'
-gem 'autoprefixer-rails'
 gem 'simple_form'
 
 # Use Capistrano for deployment

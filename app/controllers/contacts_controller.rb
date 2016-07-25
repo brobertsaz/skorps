@@ -1,5 +1,6 @@
 class ContactsController < ApplicationController
   protect_from_forgery
+  before_action :authenticate_user!
 
   def index
     @contacts = Contact.all

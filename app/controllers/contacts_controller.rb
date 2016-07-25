@@ -1,6 +1,11 @@
 class ContactsController < ApplicationController
   protect_from_forgery
 
+  def index
+    @contacts = Contact.all
+    render layout: "dashboard"
+  end
+
   def create
     @contact = Contact.create contact_params
   end

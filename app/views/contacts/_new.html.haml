@@ -12,6 +12,11 @@
 
   .form-group
     .controls
+      = f.text_field :phone, placeholder: 'Your number', class: 'form-control input-lg', required: true
+      %i.fa.fa-phone
+
+  .form-group
+    .controls
       = f.text_area :message, placeholder: 'Please enter your message', class: 'form-control input-lg', required: true
       %i.fa.fa-comment
 

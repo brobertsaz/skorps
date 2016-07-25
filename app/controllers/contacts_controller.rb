@@ -1,6 +1,6 @@
 class ContactsController < ApplicationController
   protect_from_forgery
-  before_action :authenticate_user!
+  before_action :authenticate_user!, only: :index
 
   def index
     @contacts = Contact.all
@@ -14,7 +14,7 @@ class ContactsController < ApplicationController
   private
 
   def contact_params
-    params.require(:contact).permit(:name, :email, :message)
+    params.require(:contact).permit(:name, :email, :message, :phone)
   end
 
 

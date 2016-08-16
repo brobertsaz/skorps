@@ -9,7 +9,7 @@ class ContactsController < ApplicationController
 
   def create
     @contact = Contact.create contact_params
-    AdminMailer.notify_new_contact(@contact.id).deliver_later
+    AdminMailer.notify_new_contact(@contact.id).deliver
   end
 
   private

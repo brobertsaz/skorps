@@ -74,6 +74,18 @@ $(document).ready(function() {
 		smoothHeight: true
 	});
 
+	$('.home-sub-slider').flexslider({
+		animation: "slide",
+		directionNav: false,
+		controlNav: false,
+		direction: "horizontal",
+		slideshowSpeed: 3000,
+		animationSpeed: 500,
+		pauseOnHover:false,
+		pauseOnAction:false,
+		smoothHeight: true
+	});
+
 	$(window).scroll( function() {
 	   var st = $(this).scrollTop();
 	   $('.jumbotron').css({ 'opacity' : (1 - st/250) });

@@ -474,6 +474,16 @@ a.btn-theme:focus{
     padding:0;
 }
 
+.jumbotron .third-line{
+    text-align:center;
+    overflow:hidden;
+    border:none;
+    box-shadow:none;
+    background:transparent;
+    margin:0;
+    padding:0;
+}
+
 .jumbotron .first-line p{
     display:inline-block;
     margin:0;
@@ -490,6 +500,17 @@ a.btn-theme:focus{
     margin:0;
     padding:10px;
     font-size:65px;
+    line-height:55px;
+    font-weight:300;
+    letter-spacing:0.02em;
+    word-spacing:0.02em;
+    text-transform:uppercase;
+}
+
+.jumbotron .third-line p{
+    margin:0;
+    padding:10px;
+    font-size:45px;
     line-height:55px;
     font-weight:300;
     letter-spacing:0.02em;

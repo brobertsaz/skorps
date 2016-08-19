@@ -2302,6 +2302,7 @@ a.btn-theme:focus{
 .jumbotron .third-line p{
     font-size:24px;
     line-height:28px;
+    margin-top: -10px;
 }
 
 h1.section-title{

@@ -1,7 +1,9 @@
 %header#home.jumbotron
   .container
+
     %img.img-responsive.img-center.header-logo{:alt => "", :src => "assets/drop.png"}
       .message-box.clearfix
+
         .first-line
           %p Skorpion Software builds
         .second-line.flexslider.home-slider
@@ -14,15 +16,9 @@
               %p mobile apps
             %li
               %p the web
+        .another.text-center
+          %a.btn.btn-theme.btn-lg.scrollto{:href => "#contact"} Free Website Review
 
-        %br
-        %br
-        .third-line.flexslider.home-sub-slider
-          %ul.slides
-            %li 
-              %p Call For Free Website Review
-            %li 
-              %p Call For Free Needs Analysis
 
 = render 'services'
 

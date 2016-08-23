@@ -125,7 +125,7 @@ a:focus,
     height:100%;
 	background:#D50000;
 	filter:alpha(opacity=70);
-	opacity:0.6;
+	opacity:0.75;
     z-index:-99999;
 }
 
@@ -1177,6 +1177,7 @@ a.btn-theme:focus{
 }
 
 #testimonials-slider{
+    font-size: 120%;
     border:none;
     box-shadow:none;
     background:transparent;
@@ -1293,6 +1294,7 @@ a.btn-theme:focus{
 }
 
 #approach-slider{
+    font-size: 120%;
     border:none;
     box-shadow:none;
     background:transparent;
